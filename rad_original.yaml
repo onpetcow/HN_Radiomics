@@ -1,0 +1,29 @@
+# Enable original image type. No pre-analysis.
+imageType:
+    Original: {}
+    #Wavelet: {}
+    #Square: {}
+    #SquareRoot: {}
+    #Logarithm: {}
+    #Exponential: {}
+    #LoG: {'sigma' : [1.0, 3.0]}  # This is a non active comment on a line with active code preceding it.
+
+# Enable all features for radiomics extraction.
+featureClass:
+    firstorder: 
+    shape:
+    glcm: ['Autocorrelation',
+            'JointAverage',
+            'ClusterProminence',
+            'ClusterShade',
+            'ClusterTendency',
+            'Contrast',
+            'Correlation',
+            'DifferenceAverage',
+            'DifferenceEntropy',
+            'DifferenceVariance']        
+    glrlm:
+    glszm:
+    gldm:
+    ngtdm:
+
